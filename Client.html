@@ -36,7 +36,7 @@
           }
       }
       function goi(){
-        let socket = new WebSocket("ws://localhost:5678");
+        let socket = new WebSocket("ws://192.168.230.32:8000");
         socket.onopen = function () {
           socket.send(g.value.trim());
           document.querySelector("textarea").addEventListener('keyup', function (e) {
